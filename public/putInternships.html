@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships 2025</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/putIntern.css">
+</head>
+<body>
+    <div id="container">
+        <div class="imgs">
+            <img src="./imgs/meta.png">
+            <img src="./imgs/chrome.png">
+            <img src="./imgs/windows.png">
+            <img src="./imgs/chat-gpt.png">
+            <img src="./imgs/uber.png">
+            <img src="./imgs/apple.png">
+        </div>
+
+        <h1 id="title">ACTUALIZAR INTERNSHIP</h1>
+
+        <div id="search-bar">
+            <input type="text" id="search" placeholder="ID de la pasantia..." required autocomplete="off">
+            <div id="search-btn"></div>
+        </div>
+
+        <div id="container-intern">
+            <div id="form-intern">
+                <label for = "id">ID: </label>
+                <input type="text" name="id" id="id" placeholder="numero..." required autocomplete="off" disabled> <br>
+                <label for = "company">Empresa: </label>
+                <input type="text" name="company" id="company" placeholder="Meta..." required autocomplete="off"> <br>
+                <label for = "role">Puesto: </label>
+                <input type="text" name="role" id="role" placeholder="Software Engeneer..." required autocomplete="off"> <br>
+                <label for = "location">Lugar: </label>
+                <input type="text" name="location" id="location" placeholder="New york, USA..." required autocomplete="off"> <br>
+                <label for = "salary">Salario al mes: </label>
+                <input type="text" name="salary" id="salary" placeholder="1000 USD..." required autocomplete="off"> <br>
+                <label for = "duration">Duración: </label>
+                <input type="text" name="duration" id="duration" placeholder="3 meses..." required autocomplete="off"> <br>
+                <label for = "date">Fecha de publicación: </label>
+                <input type="text" name="date" id="date" placeholder="10/10/2024..." required autocomplete="off"> <br>
+                <label for = "link">Link: </label>
+                <input type="text" name="link" id="link" placeholder="https://meta.carrers..." required autocomplete="off"> <br>
+                <button class="btn-form" id="put-btn">Actualizar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/put.js"></script>
+</body>
+</html>

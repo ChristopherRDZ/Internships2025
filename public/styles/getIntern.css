@@ -1,0 +1,122 @@
+.imgs{
+    margin-top: 5vh;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imgs img{
+    width: 3rem;
+    height: 3rem;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 1rem rgb(0, 174, 255));
+}
+
+#title{
+    font-size: 2.5rem;
+    color: rgb(228, 228, 227);
+    text-align: center;
+    margin-top: 5vh;
+    filter: drop-shadow(0 0 1rem rgba(241, 234, 140, 0.747));
+}
+
+#container-internships{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 70%;
+    border-radius: 1rem;
+    background-color: rgba(80, 80, 80, 0.158);
+    box-shadow: 0 0 1rem rgba(0, 174, 255, 0.63);
+    padding-top: .875rem;
+    overflow-y: auto;
+}
+
+.internship{
+    width: 95%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.315);
+    border: .0625rem solid rgba(187, 187, 187, 0.76);
+    border-radius: .3125rem;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .3125rem;
+}
+
+.company-title{
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    color: rgb(97, 205, 255);
+    padding-bottom: .3125rem;
+    padding-top: .3125rem;
+    border-bottom: .0625rem solid rgba(119, 119, 119, 0.479)
+}
+
+.info-intern{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: .3125rem;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: rgb(209, 209, 209);
+    font-size: 1.5rem;
+    box-sizing:content-box;
+    margin-bottom: .5rem;
+    margin-right: 1.75rem;
+    text-align: center;
+}
+
+.img-info{
+    width: 1.625rem;
+    height: 1.625rem;
+    margin-right: 1rem;
+}
+
+.info p{
+    /* if a single word is widther than the container, break the word in multiple lines */
+    word-break: break-all;
+}
+
+a{
+    color:rgb(0, 174, 255);
+}
+
+@media (max-width: 450px) {
+    .info-intern{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin-top: .3125rem;
+    }
+    .info{
+        display: flex;
+        align-self: center;
+        text-align: center;
+        margin: 0.3125rem;
+    }
+}
